@@ -26,5 +26,4 @@ for_test <- blood_full[,1:20702] # the transcripts you're testing as your depend
 covariates <- blood_full[,20703:21001] # the covariates
 MT_count <- as.numeric(blood_full[,21002]) # the MT_count
 lm_results <- apply(for_test, 2, lm_test, count = MT_count, covariates = covariates, correct_for = '+as.factor(covariates$DTHHRDY)+as.factor(covariates$RACE)')
-
 }
