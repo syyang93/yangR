@@ -15,20 +15,20 @@
 
 
 getMeanSD <- function(data.deltaCT, removed, platename){
-  samplelist=levels(as.factor(data.deltaCT$pid))
+  samplelist=levels(as.factor(data.deltaCT$Sample.Name))
   only.one.left <- data.frame()
   data.by.sample=data.frame(matrix(NA,ncol=3))
-  names(data.by.sample)=c("pid","Mean.deltaCT","SD.deltaCT")
+  names(data.by.sample)=c("Sample.Name","Mean.deltaCT","SD.deltaCT")
   for (i in 1:length(samplelist)){
     sample.test=samplelist[i]
     # if there's only one replicate that has a deltaCT value, flag the sample as NA
-    if (nrow(na.omit(subset(data.deltaCT, pid==sample.test)))==1){
-      only.one.left <- rbind(only.one.left, subset(data.deltaCT, pid==sample.test))
+    if (nrow(na.omit(subset(data.deltaCT, Sample.Name==sample.test)))==1){
+      only.one.left <- rbind(only.one.left, subset(data.deltaCT, Sample.Name==sample.test))
       mean.test="NaN"
       sd.test="NaN"
     } else {
-      mean.test=mean(as.numeric(na.omit(subset(data.deltaCT, pid==sample.test)$deltaCT)))
-      sd.test=sd(as.numeric(na.omit(subset(data.deltaCT, pid==sample.test)$deltaCT)))
+      mean.test=mean(as.numeric(na.omit(subset(data.deltaCT, Sample.Name==sample.test)$deltaCT)))
+      sd.test=sd(as.numeric(na.omit(subset(data.deltaCT, Sample.Name==sample.test)$deltaCT)))
     }
     data.by.sample[i,]=c(sample.test,mean.test,sd.test)
   }
