@@ -1,7 +1,5 @@
-#' Performs rank-order analysis on qPCR triplicates.  
-#' Interpretation: significant pipetting order effect = 1st replicate pipetted is enriched for largest (max) deltaCT value. And 3rd replicate pipetted is enriched for smallest (min) deltaCT value
+#' Gets the mean and standard deviation of deltaCT for each sample
 
-#' 
 #' @param data.deltaCT a data frame that contains deltaCT information. 
 #' @param removed a file path that you would like to write removed samples to
 #' @param platename the name of the plate that you are working with

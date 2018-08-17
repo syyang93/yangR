@@ -12,7 +12,7 @@
 #' @examples
 #' density_rug(with.pheno.noblue, 'deltaCT.Plateadjust.mean', outline = F)
 
-density_rug <- function(to_plot, density_val, col = 'black', outline = T, binsize = 0.2){
+density_rug <- function(to_plot, density_val, col = 'black', outline = T, binsize = 5){
   require(ggplot2)
   out <- 'darkgray'
   if(outline == T){out <- 'black'}
