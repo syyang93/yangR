@@ -5,7 +5,7 @@
 \title{Function that makes a ggplot density plot with a rug on the bottom}
 \usage{
 density_rug(to_plot, density_val, col = "black", outline = T,
-  binsize = 0.2)
+  binsize = 5)
 }
 \arguments{
 \item{to_plot}{Data frame containing whatever you want to plot}

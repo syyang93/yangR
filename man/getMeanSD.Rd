@@ -2,8 +2,7 @@
 % Please edit documentation in R/getMeanSD.R
 \name{getMeanSD}
 \alias{getMeanSD}
-\title{Performs rank-order analysis on qPCR triplicates.  
-Interpretation: significant pipetting order effect = 1st replicate pipetted is enriched for largest (max) deltaCT value. And 3rd replicate pipetted is enriched for smallest (min) deltaCT value}
+\title{Gets the mean and standard deviation of deltaCT for each sample}
 \usage{
 getMeanSD(data.deltaCT, removed, platename)
 }
@@ -18,8 +17,7 @@ getMeanSD(data.deltaCT, removed, platename)
 Returns results of the rank-order analysis
 }
 \description{
-Performs rank-order analysis on qPCR triplicates.  
-Interpretation: significant pipetting order effect = 1st replicate pipetted is enriched for largest (max) deltaCT value. And 3rd replicate pipetted is enriched for smallest (min) deltaCT value
+Gets the mean and standard deviation of deltaCT for each sample
 }
 \examples{
 	ranks <- getRanks(mydata_deltaCT)
