@@ -16,5 +16,5 @@ give.n(x)
 Allows boxplots to output the number of observations for each factor.
 }
 \examples{
-p <- ggplot(all2, aes(x=Group2, y=corr_mito_D)) + geom_boxplot() + stat_summary(fun.data = give.n, geom = "text")
+p <- ggplot(all2, aes(x=Group2, y=corr_mito_D)) + stat_summary(fun.data = give.n, geom = "text") + geom_boxplot()
 }
