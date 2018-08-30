@@ -16,5 +16,5 @@ A p-value QQ-plot
 Function for plotting cor values onto a correlation matrix
 }
 \examples{
-pairs(~TRISCHD + covariates, data = df, na.action = na.omit, upper.panel=panel.cor)
+pairs(~PC1 + PC2, data = df, lower.panel=twolines, diag.panel=mydiag.panel, upper.panel=panel.cor, label.pos=0.5, main="Correlation matrix of PCs and covariates", labels = c('PC1', 'PC2'))
 }
