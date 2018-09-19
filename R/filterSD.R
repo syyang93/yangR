@@ -8,9 +8,6 @@
 #' @export
 #' 
 #' @return Returns a data frame that has removed samples with deltaCT > 0.5 
-#' 
-#' @examples
-
 
 
 filterSD <- function(mydata_withPO, data.SD.means, platename) {

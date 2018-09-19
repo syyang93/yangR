@@ -6,8 +6,6 @@
 #' @export
 #' 
 #' @return Returns a data frame that has removed samples with deltaCT > 0.5 
-#' 
-#' @examples
 
 getFinalMeans <- function(data.deltaCT.PO.clean, platename){
   plate = platename

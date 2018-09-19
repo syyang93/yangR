@@ -7,8 +7,7 @@
 #' @export
 #' 
 #' @return Returns a data frame that has removed samples with deltaCT > 0.5 
-#' 
-#' @examples
+
 
 filterRPPH <- function(data.deltaCT.PO.clean, platename) {
   cut.off.upper=mean(data.deltaCT.PO.clean$CT.RPPH1)+ (5* (sd(data.deltaCT.PO.clean$CT.RPPH1)))
