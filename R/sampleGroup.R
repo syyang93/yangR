@@ -1,4 +1,4 @@
-#' Function for sampling by group, taken from stackexchange
+#' Function for sampling, taken from stackoverflow
 #' 
 #' @param df the df to sample from
 #' @param size number of samples

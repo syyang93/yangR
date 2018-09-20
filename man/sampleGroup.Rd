@@ -2,7 +2,7 @@
 % Please edit documentation in R/sampleGroup.R
 \name{sampleGroup}
 \alias{sampleGroup}
-\title{Function for sampling by group, taken from stackexchange}
+\title{Function for sampling, taken from stackoverflow}
 \usage{
 sampleGroup(df, size)
 }
@@ -12,7 +12,7 @@ sampleGroup(df, size)
 \item{size}{number of samples}
 }
 \description{
-Function for sampling by group, taken from stackexchange
+Function for sampling, taken from stackoverflow
 }
 \examples{
 Will sample 2 observations per species in the iris dataframe
