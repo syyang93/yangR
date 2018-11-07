@@ -30,7 +30,7 @@ ddpcr_process <- function(testdata) {
   rpph1$RPPH_CopiesPer20uLWell <- rpph1$CopiesPer20uLWell
   rpph1 <- dplyr::select(rpph1, Well, RPPH_CopiesPer20uLWell)
   nd1$ND_CopiesPer20uLWell <- nd1$CopiesPer20uLWell
-  
+  nd1$CopiesPer20uLWell <- NULL
   combined.data <- merge(nd1, rpph1, by = 'Well')
   return(combined.data)
 }
