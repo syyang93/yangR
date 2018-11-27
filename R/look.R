@@ -7,5 +7,11 @@
 #' look(df)
 
 look <- function(df){
+  if(ncol(df) > 5)
+  {
   df[1:5, 1:5]
+  }
+  else{
+    df[1:5, 1:ncol(df)]
+  }
 }
