@@ -9,11 +9,10 @@
 #' @examples
 #' dup_indices <- getAllDups(x)
 
-
 getAllDups <- function(x) {
   top <- which(duplicated(x))
   bot <- which(duplicated(x, fromLast = T))
-  both <- c(top, both)
+  both <- c(top, bot)
   dup.indices <- both[order(both)]
   return(dup.indices)
 }
