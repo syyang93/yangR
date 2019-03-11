@@ -12,7 +12,7 @@
 getAllDups <- function(x) {
   top <- which(duplicated(x))
   bot <- which(duplicated(x, fromLast = T))
-  both <- c(top, bot)
+  both <- union(top, bot)
   dup.indices <- both[order(both)]
   return(dup.indices)
 }
