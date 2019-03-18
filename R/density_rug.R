@@ -17,8 +17,9 @@ density_rug <- function(to_plot, density_val, col = 'black', outline = T, binsiz
   out <- 'darkgray'
   if(outline == T){out <- 'black'}
   g <- ggplot(to_plot,aes_string(x = density_val))+
-    geom_histogram(binwidth = binsize, fill = 'darkgray', color = out)+
+    geom_rug()+
     geom_density(size = 1, aes(y=binsize * ..count..), color = col)
   return(g)
 }
+
 
