@@ -1,4 +1,4 @@
-#' Allows boxplots to output the number of observations for each factor.
+#' Allows boxplots to output the number of observations for each factor.  Taken from stackoverflow: https://stackoverflow.com/questions/3483203/create-a-boxplot-in-r-that-labels-a-box-with-the-sample-size-n
 #' 
 #' @param x 
 #' 
