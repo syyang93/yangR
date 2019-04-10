@@ -6,9 +6,6 @@
 \usage{
 panel.cor(x, y, digits = 2, prefix = "", cex.cor, ...)
 }
-\arguments{
-\item{lm_object}{The results of an lm that you want a p-value QQ-plot for}
-}
 \value{
 A p-value QQ-plot
 }
