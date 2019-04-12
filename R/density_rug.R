@@ -12,13 +12,10 @@
 #' @examples
 #' density_rug(with.pheno.noblue, 'deltaCT.Plateadjust.mean', outline = F)
 
-density_rug <- function(to_plot, density_val, col = 'black', outline = T, binsize = 5){
-  require(ggplot2)
-  out <- 'darkgray'
-  if(outline == T){out <- 'black'}
+density_rug <- function(to_plot, density_val){
   g <- ggplot(to_plot,aes_string(x = density_val))+
-    geom_rug()+
-    geom_density(size = 1, aes(y=binsize * ..count..), color = col)
+    geom_rug() +
+    geom_density() + ggtitle(paste0('Density plot for ', density_val))
   return(g)
 }
 
