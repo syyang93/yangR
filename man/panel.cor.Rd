@@ -7,7 +7,7 @@
 panel.cor(x, y, digits = 2, prefix = "", cex.cor, ...)
 }
 \value{
-A p-value QQ-plot
+text for the pairwise correlation plot
 }
 \description{
 Function for plotting cor values onto a correlation matrix
