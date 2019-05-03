@@ -10,8 +10,8 @@
 #' omit.outliers(mtcars$mpg)
 
 omit.outliers <- function(x, sd = 3){
-  m <- mean(x)
-  s <- sd(x)
+  m <- mean(x, na.rm = T)
+  s <- sd(x, na.rm = T)
   up.out <- which(x > (m + sd*s))
   low.out <- which(x < (m - sd*s))
   all.out <- union(up.out, low.out)
