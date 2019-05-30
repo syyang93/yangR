@@ -10,7 +10,7 @@
 #' test2=makequartiles(test$resid.mtDNA)
 
 make.quartiles=function(test){
-  quartiles= cut(test, breaks=quantile(test, probs=seq(0,1,by=0.25), na.rm=T))
+  quartiles= cut(test, breaks=quantile(test, probs=seq(0,1,by=0.25), na.rm=T, include.lowest = T))
   num.quartiles=quartiles
   levels(num.quartiles)=c("1", '2', '3', '4')
   num.quartiles=factor(as.character(num.quartiles))
