@@ -15,6 +15,6 @@ make.quartiles=function(test){
   levels(num.quartiles)=c("1", '2', '3', '4')
   num.quartiles=factor(as.character(num.quartiles))
   test <- data.frame(quartiles = quartiles, num.quartiles = num.quartiles)
-  return(test)
+  return(test$num.quartiles)
 }
 
