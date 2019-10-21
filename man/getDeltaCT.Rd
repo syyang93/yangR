@@ -4,7 +4,7 @@
 \alias{getDeltaCT}
 \title{Reads qPCR data into a dataframe}
 \usage{
-getDeltaCT(mydata, nuc.probe = "RPPH1", mit.probe = "ND1")
+getDeltaCT(mydata, nuc.probe = "RPPH", mit.probe = "ND1")
 }
 \arguments{
 \item{mydata}{the data frame with the qPCR data}
