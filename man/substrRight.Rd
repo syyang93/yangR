@@ -9,3 +9,6 @@ substrRight(x, n)
 \description{
 Takes the last n characters of a string.  Taken from: https://stackoverflow.com/questions/7963898/extracting-the-last-n-characters-from-a-string-in-r
 }
+\examples{
+substrRight('character', 3)
+}
