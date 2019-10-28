@@ -2,12 +2,13 @@
 % Please edit documentation in R/addPOadjust.R
 \name{addPOadjust}
 \alias{addPOadjust}
-\title{Adjusts for pipetting order
-	data.deltaCT.PO.clean <- getRanks(mydata_deltaCT)}
+\title{Adjusts for pipetting order}
 \usage{
 addPOadjust(data.deltaCT.PO.clean)
 }
 \description{
 Adjusts for pipetting order
+}
+\examples{
 	data.deltaCT.PO.clean <- getRanks(mydata_deltaCT)
 }

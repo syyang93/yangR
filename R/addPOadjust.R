@@ -1,4 +1,6 @@
 #' Adjusts for pipetting order
+#' @export
+#' @examples 
 #' 	data.deltaCT.PO.clean <- getRanks(mydata_deltaCT)
 
 
