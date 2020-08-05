@@ -4,8 +4,16 @@
 \alias{make.forestplot}
 \title{Function for pretty forestplots, adapted from Ryan}
 \usage{
-make.forestplot(model.slot = 4, numfits = 4, model_names, fit1, fit2,
-  fit3, fit4, inc = 0.1)
+make.forestplot(
+  model.slot = 4,
+  numfits = 4,
+  model_names,
+  fit1,
+  fit2,
+  fit3,
+  fit4,
+  inc = 0.1
+)
 }
 \arguments{
 \item{model.slot}{the position of the thing you're comparing to within the model summary results}
